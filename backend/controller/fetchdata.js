@@ -45,7 +45,7 @@ exports.fetchdata = async (req, res) => {
         option.strikePrice === parseInt(strikeprice[0]) &&
         option.expiryDate.toLowerCase() === expiryDate[0].toLowerCase()
       ) {
-        console.log('hey Gandu');
+        console.log('test');
       }
     });
     const PEData = data.PE.find(
