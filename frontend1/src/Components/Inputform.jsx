@@ -29,29 +29,29 @@ const Inputform = () => {
   };
 
   return (
-    <div className="flex justify-center mt-4">
+    <div className="flex justify-center mt-4 ">
       <form
-        className="flex flex-col space-y-4 border p-4 rounded-[12px]"
+        className="flex flex-col space-y-4 border p-4 rounded-[12px] h-60"
         onSubmit={getdata}
       >
         <input
           value={symbol}
           onChange={e => setSymbol(e.target.value)}
-          className="border-2 rounded-lg shadow-lg shadow-slate-600"
+          className="border-2 rounded-lg shadow-lg shadow-slate-600 pt-1 pb-1"
           type="text"
           placeholder="Enter symbol"
         />
         <input
           value={strike}
           onChange={e => setStrike(e.target.value)}
-          className="border-2 rounded-lg shadow-slate-600"
+          className="border-2 rounded-lg shadow-slate-600 pt-1 pb-1"
           type="text"
           placeholder="Enter strikeprice"
         />
         <input
           value={expiry}
           onChange={e => setExpiry(e.target.value)}
-          className="border-2 rounded-lg shadow-slate-600"
+          className="border-2 rounded-lg shadow-slate-600 pt-1 pb-1"
           type="text"
           placeholder="Enter expiry"
         />

@@ -4,7 +4,7 @@ import { Toaster } from 'sonner';
 const App = () => {
   return (
     <div className="h-screen bg-zinc-700 font-bold">
-      <h1 className="justify-center text-center text-white">Options data</h1>
+      <h1 className="justify-center text-center text-white drop-shadow-2xl">Options data</h1>
       <Inputform />
       <Toaster richColors />
     </div>
