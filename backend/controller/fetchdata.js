@@ -1,9 +1,7 @@
 const fetchOptionData = require('../middleware/fetchoptionsdata');
 exports.fetchdata = async (req, res) => {
-  const symbol = JSON.parse(req.query.symbol); // Get the symbol from the query parameters
-  const strikeprice = JSON.parse(req.query.strikeprice); // Get the strike price from the query parameters
+  const { symbol, strikeprice, expiryDate } = JSON.parse(req.query); // Extract symbol, strikeprice, expiryDate from req.query
   console.log(strikeprice);
-  const expiryDate = JSON.parse(req.query.expiryDate); // Get the expiry date from the query parameters
   console.log(req.query.expiryDate);
 
   if (!symbol) {
